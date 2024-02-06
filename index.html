@@ -54,6 +54,7 @@
 					<img src="images\cloud.gif" alt="Malware Database" style="height: 70px; width: auto;" />
 				</a>
 			</div>
+			
 		</div>
 		
 
@@ -80,10 +81,10 @@
 		</div>
 	</div>
 
-	<div id="different-section" class="hidden-section">
+	<div id="different-section">
 		<div id="new-section" class="container pt-24 w-full md:pt-48 px-6 mx-auto">
 			<div class="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
-				<h1 class="my-4 text-3xl md:text-10xl text-red-800 font-bold leading-tight text-center md:text-left"><p>What's different about this chrome extension?</p></h1>
+				<h1 class="my-4 text-3xl md:text-10xl text-red-800 font-bold leading-tight text-center md:text-left slide-in-bottom-subtitle"><p>What's different about this chrome extension?</p></h1>
 				<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">In my quest for the most effective online protection, I noticed a concerning oversight among some existing malware blocker Chrome extensions – a failure to intercept certain downloadable malware links(click on the cloud at top-right), which are sometimes not even blocked by Google's Safe Browsing.
 					<ul class="bulleted-list leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">
 						<li>To bridge this security gap, I created the <a style="font-weight: 700; color: #a20300;">'Malware URL Blocker.'</a> This extension zeroes in on these elusive threats, blocking harmful downloads before they can do any damage.</li>
@@ -109,27 +110,6 @@
 	  typeSpeed: 25,
 	  
 	});
-  </script>
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-  var observer = new IntersectionObserver(function(entries) {
-    if(entries[0].isIntersecting === true)
-        document.querySelector("#different-section").classList.add("visible-section");
-  }, { threshold: [1] });
-
-  observer.observe(document.querySelector("#different-section"));
-});	
-</script>
-<script>
-	window.onbeforeunload = function() {
-	  window.scrollTo(0, 0);
-	};
-  
-	window.onload = function() {
-	  if (window.location.hash) {
-		history.replaceState("", document.title, window.location.pathname + window.location.search);
-	  }
-	};
   </script>
 </body>
 
