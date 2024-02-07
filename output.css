@@ -542,6 +542,9 @@ video {
 .flex {
   display: flex;
 }
+.hidden {
+  display: none;
+}
 .h-screen {
   height: 100vh;
 }
@@ -612,9 +615,6 @@ video {
 }
 .pt-24 {
   padding-top: 6rem;
-}
-.text-left {
-  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -846,6 +846,95 @@ body {
 	transform: scaleX(1);
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.privacy-policy-heading {
+    color: #a20300; /* The color you specified */
+    font-size: 2em; /* Bigger size for the heading */
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.terms-of-use-heading {
+  color: #a20300; /* The color you specified */
+  font-size: 2em; /* Bigger size for the heading */
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 600px; /* Adjust this value to your preference */
+  margin: auto; /* This will center the modal content horizontally */
+  margin-top: 25rem;
+  padding: 20px; /* Add some padding inside the content box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+  background: #fff; /* Optional: in case you want a different background color */
+  border-radius: 8px; /* Optional: rounds the corners of the modal content */
+}
+
+.modal-content h2 {
+  color: #a20300; /* Color for main heading */
+  margin-bottom: 1em; /* Space below the heading */
+}
+
+.modal-content h3 {
+  color: #333; /* Dark grey color for subheadings */
+  font-size: 1.5em; /* Slightly smaller than the main heading */
+  margin-top: 1em;
+  text-align: left;
+}
+
+.modal-content p, .modal-content ul {
+  font-size: 1em; /* Standard text size for body content */
+  color: #666; /* Lighter grey color for body text */
+  line-height: 1.5; /* For better readability */
+  text-align: left;
+  margin-top: 0.6em;
+
+}
+
+.modal-content ul {
+  list-style-type: disc; /* Shows bullet points */
+  padding-left: 20px; /* Align with the rest of the text, adjust as needed */
+}
+
+.modal-content li {
+  margin-bottom: 0.5em; /* Space between list items */
+  text-align: left; /* Align text to the left */
+}
+
 .hover\:no-underline:hover {
   text-decoration-line: none;
 }
@@ -905,4 +994,3 @@ body {
     width: 60%;
   }
 }
-
