@@ -93,16 +93,63 @@
 						<li>'Malware URL Blocker' is not just another extension; it's a steadfast guardian designed to complement your existing security arsenal. With no setup or ongoing management required, it's the epitome of <a style="font-style: italic; text-decoration: underline;">'install and forget'</a> – quietly collaborating with any other malware blockers that you may have, to provide a fully secure and unintrusive browsing environment.</li>
 				  	</ul></p>
 			</div>
-			<div class="w-full pt-16 pb-6 text-sm text-left md:text-left fade-in">
+			<div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
 				<a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; 2024 By Ishaque</a>
-			</div>
-
+				|
+				<a href="#" class="text-gray-500 no-underline hover:no-underline" onclick="openModal('privacyModal')">Privacy Policy</a>
+				|
+				<a href="#" class="text-gray-500 no-underline hover:no-underline" onclick="openModal('termsModal')">Terms of Use</a>
+			</div>			
 		</div>
-		
 	</div>	
-	
+
 </div>
-  <script>
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="modal hidden">
+    <div class="modal-content">
+    <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+    <h2 class="privacy-policy-heading">Privacy Policy</h2>
+    <h3>Information Collection and Use</h3>
+		<p>The "Malware URL Blocker" is designed to enhance your online security by blocking access to malicious URLs. In line with our commitment to your privacy, our extension:</p>
+    		<ul>
+        		<li>Does not collect, store, or transmit personal information.</li>
+        		<li>Does not monitor or log your browsing activity.</li>
+        		<li>Operates locally on your device without requiring any personal data.</li>
+    		</ul>
+    <h3>Data Storage</h3>
+    <p>The extension uses local storage to maintain a timestamp for the last list update. No user data or browsing history is stored.</p>
+    <h3>Information Sharing and Disclosure</h3>
+    <p>Since we do not collect any personal data, there is no information to share or disclose to third parties.</p>
+    <h3>Your Choices and Opt-Outs</h3>
+    <p>Users who decide to install the "Malware URL Blocker" extension can opt-out at any time by simply uninstalling the extension from their Chrome browser.</p>
+	<h3>Contact Us</h3>
+	<p>To ask questions or comment about these Terms of Use, contact us at <a href="mailto:ishaquesyed12@gmail.com"><u>this email.</u></a></p>	
+</div>
+
+</div>
+
+<!-- Terms of Use Modal -->
+<div id="termsModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('termsModal')">&times;</span>
+        <h2 class="terms-of-use-heading">Terms of Use</h2>
+        <h3>Acceptance of the Terms of Use</h3>
+        <p>The following terms and conditions govern your access to and use of the Malware URL Blocker.</p>
+		<h3>Access to the Service</h3>
+		<p>We grant you a personal, non-exclusive, non-transferable, limited privilege to enter and use the extension.</p>
+		<h3>Use Restrictions</h3>
+		<p>You agree not to use the extension in any way that is illegal, or harmful to us, other users, or third parties.</p>
+		<h3>Intellectual Property Rights</h3>
+		<p>The content, features, and functionality of the extension are owned by the Company and are protected by international copyright and intellectual property laws.</p>
+		<h3>Limitation of Liability</h3>
+		<p>The Company shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or use of, or inability to access or use the Service.</p>
+		<h3>Contact Us</h3>
+		<p>To ask questions or comment about these Terms of Use, contact us at <a href="mailto:ishaquesyed12@gmail.com"><u>this email.</u></a></p>
+	</div>
+</div>
+
+
+<script>
 	var typed = new Typed('#typed-text', {
       
 	  strings: ["Your safety is our priority."],
@@ -111,6 +158,17 @@
 	  
 	});
   </script>
+
+<script>
+	function openModal(modalId) {
+		document.getElementById(modalId).style.display = "block";
+	}
+	
+	function closeModal(modalId) {
+		document.getElementById(modalId).style.display = "none";
+	}
+</script>
+	
 </body>
 
 </html>
