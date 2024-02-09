@@ -278,7 +278,7 @@ body {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #54b3d6;
+  color: #a20300;
 }
 
 .custom-link:hover::before {
